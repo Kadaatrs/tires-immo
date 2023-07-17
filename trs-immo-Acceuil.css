@@ -1,0 +1,17 @@
+body {
+    background-image: url(plaza.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+}

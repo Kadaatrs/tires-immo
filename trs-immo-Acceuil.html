@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acceuil</title>
+  <link rel="stylesheet" type="text/css" href="trs-immo-Acceuil.css">
+</head>
+<header style="text-align: left;">
+  <img class="logo" src="trs-immo logo 3.jpg" alt="logo"> 
+</header>
+<body>
+  <center>
+  <h1>Welcome to the Home Page!</h1>
+  <nav>
+    <a href="trs-immo-Acceuil.html">Acceuil</a>
+    <a href="trs-immo-Projets.html">Projets</a>
+    <a href="trs-immo-àpropos.html">À propos</a>
+    <a href="trs-immo-Contact.html">Contact</a>
+  </nav>
+  <p>This is the content of the home page.</p>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript code for form submission and validation
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the form values
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Perform form validation here if needed
+
+      // Send the form data to the server (you need to implement the server-side code)
+      // You can use Fetch API or AJAX to send the form data
+
+      // Reset the form after submission
+      document.getElementById("contact-form").reset();
+    });
+  </script>
+
+  </center>
+</body>
+
+<footer>
+  <h4>~2023 Tires-immo By.Kada</h4>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
